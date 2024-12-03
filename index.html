@@ -41,25 +41,26 @@
 			<div class="header">
 				<div class="header_nav">
 					<img class="logo" src="images/logo.png" alt="Logo services bahani vissiley">
-					<ul class="nav justify-content-center">
+					<ul id="icon" class="nav justify-content-center">
+						<div onclick="HideMenu()" class="close-btn-menu">✖</div>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Services</a>
+							<a class="nav-link" href="#work">Services</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Portfolio</a>
+							<a class="nav-link" href="portfolio.html">Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Blog</a>
+							<a class="nav-link" href="blogs.html">Blog</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact</a>
+							<a class="nav-link" href="contact.html">Contact</a>
 						</li>
 					</ul>
 					<a href="#" class="buttonContact">Me contacter</a>
-					<div class="menu-icon" onclick="toggleMenu()">
+					<div id="icon" class="menu-icon menu-icon-home" onclick="toggleMenu()">
 						☰
 					</div>
 				</div>
@@ -68,11 +69,11 @@
 				<div class="container hero">
 					<!-- Texte principal -->
 					<div class="hero-content">
-						<h2 class="subtitle reveal-1">Je suis BAHANI THIERRY</h1>
-							<h1 class="title reveal-2">Full-stack <br>developper...
+						<h2 class="subtitle reveal-1">👋 Je suis BAHANI THIERRY</h1>
+							<h1 class="title-head reveal-2">Full-stack <br>developper...
 						</h2>
 						<p class="description reveal-2">De l'analyse en passant par le design des maquettes jusqu'au
-							deploiement,<br> confiez nous vos travaux et nous nous occupons de tout.</p>
+							deploiement, confiez nous vos travaux et nous nous occupons de tout.</p>
 						<div class="row actions reveal-4">
 							<a href="#" class="button">Télecharger CV</a>
 							<div class="social-icons">
@@ -84,8 +85,10 @@
 					</div>
 
 					<!-- Image à droite -->
-					<div class="hero-image reveal-4">
-						<img src="https://via.placeholder.com/400x450" alt="Developer">
+					<div class="padimage">
+						<div class="hero-image reveal-4">
+							<img src="images/img-header.jpg" alt="Developer">
+						</div>
 					</div>
 				</div>
 
@@ -104,12 +107,12 @@
 						<div class="col-sm-6 col-xs-11 reveal-1">
 							<div class="media">
 								<div class="media-object media-left">
-									<i class="fa fa-laptop"></i>
+									<i class="fa" data-lucide="braces"></i>
 								</div>
 								<div class="media-body">
-									<h3 class="media-heading">Developpement</h3>
-									<p>Lavish CSS Template is designed by templatemo. Download, edit and use this
-										layout.</p>
+									<h3 class="media-heading">Developpement logiciel</h3>
+									<p>Nous vous concevons ce que vous imaginez comme vous l'imaginez, mobile, web et
+										standalone.</p>
 								</div>
 							</div>
 						</div>
@@ -117,12 +120,12 @@
 						<div class="col-sm-6 col-xs-11 reveal-2">
 							<div class="media">
 								<div class="media-object media-left">
-									<i class="fa fa-link"></i>
+									<i class="fa" data-lucide="chart-network"></i>
 								</div>
 								<div class="media-body">
-									<h3 class="media-heading">CSS Templates</h3>
-									<p>We provide a wide range of HTML5 templates for free. Please spread a word about
-										us on social media.</p>
+									<h3 class="media-heading">Transformation digital</h3>
+									<p>Vous etes pret a passer a une autre etape pour votre entreprise ? Nous vous
+										accompagnons sur la transformation complete de votre strucutre</p>
 								</div>
 							</div>
 						</div>
@@ -130,13 +133,12 @@
 						<div class="col-sm-6 col-xs-11 reveal-3">
 							<div class="media">
 								<div class="media-object media-left">
-									<i class="fa fa-paper-plane"></i>
+									<i class="fa" data-lucide="tangent"></i>
 								</div>
 								<div class="media-body">
-									<h3 class="media-heading">UI &AMP; UX Design</h3>
-									<p>Credits go to <a rel="nofollow" href="https://pixabay.com">Pixabay</a> and <a
-											rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in
-										this free CSS website template.</p>
+									<h3 class="media-heading">UI &AMP; UX Design/Graphisme</h3>
+									<p>Parceque c'est grace que l'on vend, nous vous offrons des conception grapique
+										professionnels</p>
 								</div>
 							</div>
 						</div>
@@ -144,13 +146,11 @@
 						<div class="col-sm-6 col-xs-11 reveal-3">
 							<div class="media">
 								<div class="media-object media-left">
-									<i class="fa fa-paper-plane"></i>
+									<i class="fa" data-lucide="globe-lock"></i>
 								</div>
 								<div class="media-body">
-									<h3 class="media-heading">UI &AMP; UX Design</h3>
-									<p>Credits go to <a rel="nofollow" href="https://pixabay.com">Pixabay</a> and <a
-											rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in
-										this free CSS website template.</p>
+									<h3 class="media-heading">Securisation et deploiement</h3>
+									<p>Concevoir oui, mais securiser et deployer selon les normes encore mieux.</p>
 								</div>
 							</div>
 						</div>
@@ -163,7 +163,7 @@
 
 		<section>
 			<!-- start competences -->
-			<div id="about">
+			<div id="competences">
 				<div class="container">
 					<!-- Titre centré -->
 					<div class="title">
@@ -222,35 +222,50 @@
 		</section>
 
 
+
+
+
+		<section>
+			<!-- start competences -->
+			<div id="competences" class="about">
+				<div class="container">
+					<!-- Titre centré -->
+					<div class="title" style="margin: auto;">
+						<h2 class="gradient-text">A PROPOS DE MOI</h2>
+					</div>
+
+					<!-- Contenu centré (image + compétences) -->
+					<div class="row">
+						<!-- Colonne pour l'image -->
+						<div class="col-md-6 reveal-1 text-about">
+							<h3>Bahani vissiley thierry</h3>
+							<h4>ingénieur génie logiciel, graphiste et developpeur freelance</h4>
+							<p>Ingénieur en génie logiciel passionné et actuellement étudiant en master en management
+								des projets informatiques, je combine plus de quatre ans dans la
+								conception de solutions innovantes, sécurisées et esthétiques qui répondent à leurs
+								besoins spécifiques. Mon approche rigoureuse garantit des réalisations de qualité
+								respectant les normes de sécurité et de performance, essentielles dans un contexte
+								technologique en constante évolution.</p>
+						</div>
+						<!-- Colonne pour les compétences -->
+						<div class="col-md-6 reveal-2 img-moi">
+							<img src="images/bahani.png" alt="Bahani vissiley thierry">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end competences -->
+		</section>
+
+
 		<!-- Portfolio -->
 
 		<section>
 			<div id="portfolio">
 				<div class="container">
-					<div class="title">
-						<h2 class="gradient-text">A PROPOS DE MOI</h2>
-					</div>
-
-					<div class="row">
-						<div class="col-md-6 col-xs-11">
-							<div class="article-blog">
-
-							</div>
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-		</section>
-
-		<section>
-			<div id="portfolio">
-				<div class="container">
-					<div class="title">
-						<h2 class="gradient-text">BLOGS</h2>
-						<p class="mb-5">We put your ideas and thus your wishes in the form of a unique web project that
-							inspires you and your customers.</p>
+					<div class="title" style="width: 100vw;">
+						<h2 class="gradient-text">BLOG</h2>
+						<p class="mb-5">Des articles interessants dans le domaine de l'it et du business en ligne.</p>
 					</div>
 
 					<div class="row title">
@@ -262,8 +277,7 @@
 								</div>
 								<div class="blog-content p-3">
 									<p class="text-muted small mb-2 d-flex justify-content-between">
-										<span><i class="fa fa-calendar"></i> Dec 01, 2022</span>
-										<span><i class="fa fa-comments-o"></i> Comment (0)</span>
+										<span>By Admin</span> | <span>11 Jul, 2023</span> | <span>Comments (3)</span>
 									</p>
 									<h5 class="fw-bold mb-0">Top 10 UI UX Designers</h5>
 								</div>
@@ -278,8 +292,7 @@
 								</div>
 								<div class="blog-content p-3">
 									<p class="text-muted small mb-2 d-flex justify-content-between">
-										<span><i class="fa fa-calendar"></i> Dec 01, 2022</span>
-										<span><i class="fa fa-comments-o"></i> Comment (0)</span>
+										<span>By Admin</span> | <span>11 Jul, 2023</span> | <span>Comments (3)</span>
 									</p>
 									<h5 class="fw-bold mb-0">App Development Guides</h5>
 								</div>
@@ -293,8 +306,7 @@
 								</div>
 								<div class="blog-content p-3">
 									<p class="text-muted small mb-2 d-flex justify-content-between">
-										<span><i class="fa fa-calendar"></i> Dec 01, 2022</span>
-										<span><i class="fa fa-comments-o"></i> Comment (0)</span>
+										<span>By Admin</span> | <span>11 Jul, 2023</span> | <span>Comments (3)</span>
 									</p>
 									<h5 class="fw-bold mb-0">Learn Graphic Design Free</h5>
 								</div>
@@ -308,37 +320,60 @@
 		</section>
 
 
+		<section class="chat-section">
+			<div class="container">
+				<div class="chat">
+					<p>Besoin de se lancer dans un projet ?</p>
+					<h1 class="texte-anim">Discutons d'une mission</h1>
+					<div class="mailchat">
+						<div class="row">
+							<h2>bahanivissiley@outlook.com</h2>
+							<div class="icon-chat">
+								<i class="fa fa-arrow-right"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 
 
 
 
 		<!-- Start Footer -->
+		<!-- Start Footer -->
 		<footer class="footer text-white">
 			<div class="container">
 				<div class="row justify-content-between">
 					<!-- Logo et description -->
-					<div class="col-md-6">
-						<h5 class="text-uppercase">bavithy it</h5>
+					<div class="col-md-6 mb-4">
+						<h5 class="text-uppercase">Bavithy IT</h5>
 						<p>
-							Ne ratez aucune de nos actualites en vous abonnant sur notre newsletter.
+							Ne ratez aucune de nos actualités en vous abonnant à notre newsletter.
 						</p>
-						<form class="d-flex">
-							<input type="email" class="form-control" placeholder="Entrer votre mail">
+						<form class="d-flex flex-wrap">
+							<input type="email" class="form-control me-2" placeholder="Entrez votre email">
 							<button class="btn btn-primary" type="submit">Souscrire</button>
 						</form>
 					</div>
 					<!-- Contacts -->
-					<div class="col-md-3">
+					<div class="col-md-3 mb-4">
 						<h5 class="text-uppercase">Contacts</h5>
 						<ul class="list-unstyled">
-							<li><a href="#" class="text-white text-decoration-none">Contact</a></li>
-							<li><a href="#" class="text-white text-decoration-none me-3"><i class="fa fa-instagram"></i></a>
-								<a href="#" class="text-white text-decoration-none me-3"><i class="fa fa-github"></i></a>
-								<a href="#" class="text-white text-decoration-none"><i class="fa fa-linkedin"></i></i></a></li>
+							<li>
+								<a href="#" class="text-white text-decoration-none">Contact</a>
+							</li>
+							<li class="mt-3 d-flex gap-3">
+								<a href="#" class="text-white text-decoration-none"><i class="fa fa-instagram"></i></a>
+								<a href="#" class="text-white text-decoration-none"><i class="fa fa-github"></i></a>
+								<a href="#" class="text-white text-decoration-none"><i class="fa fa-linkedin"></i></a>
+							</li>
 						</ul>
 					</div>
 					<!-- Légal -->
-					<div class="col-md-3">
+					<div class="col-md-3 mb-4">
 						<h5 class="text-uppercase">Légal</h5>
 						<ul class="list-unstyled">
 							<li><a href="#" class="text-white text-decoration-none">Confidentialité</a></li>
@@ -348,17 +383,17 @@
 				</div>
 			</div>
 
-			<div class="container">
+			<div class="container mt-3">
 				<div class="row align-items-center">
 					<!-- Copyright -->
-					<div class="col-sm-12 text-center text-md-start">
-						<p class="mb-0">&copy; 2024 Thinkbav. Conçu par Bahani vissiley thierry</p>
+					<div class="col-md-6 text-center text-md-start">
+						<center><p class="mb-0">&copy; 2024 Thinkbav. Conçu par Bahani Vissiley Thierry</p></center>
 					</div>
 					<!-- Réseaux sociaux -->
-					
 				</div>
 			</div>
 		</footer>
+
 
 	</div>
 	<!-- end footer -->
@@ -366,6 +401,10 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="https://unpkg.com/lucide@latest"></script>
+	<script>
+		lucide.createIcons();
+	</script>
 
 </body>
 
